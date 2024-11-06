@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(17, 16, 16);
+    color: gray;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 27px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.line {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.elem {
+    margin-right: 15px;
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: white;
+}
+
+/* .lastIndex {
+    border-left: 2px solid orange;
+} */
+
+#timer {
+    color: orange;
+}
+
+/***** Header *****/
+
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #1d1e20;
+    align-items: center;
+    height: 70px;
+    padding-left: 140px;
+}
+
+.timerBtns {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.time {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    color: #646669;
+}
+
+.time:hover {
+    color: white;
+    transition: .2s ease-in;
+}
+
+.time-tool {
+    width: 24px;
+    height: 24px;
+}
+
+.Refresh {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.disable-time-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    color: #646669;
+    cursor:default ;
+}
+
+.time-active {
+    color: white;
+}
+
+.Refresh-btn-container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.Refresh button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.selector {
+    position: absolute;
+    width: 2px;
+    margin-top: 3.5px;
+    height: 35px;
+    background-color: orange;
+    transition: .2s linear;
+}
+
+ /* .lastIndex {
+    width: 2px;
+    color: green;
+} */
